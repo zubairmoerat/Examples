@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 body {
+    font-family: 'Roboto Slab', serif;
     text-align: center;}
 .container {
     background-color: blueviolet;}
@@ -27,10 +29,10 @@ body {
     margin: 10px ;
     padding: 10px;
     border: 5px dotted;}
-/*.container {
+.container {
     width: 300px;
     margin: 20px auto;
-    border-radius: 20px;}*/
+    border-radius: 20px;}
 img {
     width: 400px;
     aspect-ratio: 1/1;}
@@ -39,6 +41,52 @@ img[alt="gym"] {
     aspect-ratio: 1/1;
     border: 2px solid;
     border-radius: 20%;}
-
+    /*pseudo class*/
+a:active, a:hover{
+        text-decoration: underline;
+        background-color: cadetblue;
+    }
+/*pseudo element*/
+.wrapper p::first-letter{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: darkorange;
+    float: left;
+}
+::selection{
+   background-color:crimson ;
+}
+section:first-child{
+    background-color: chartreuse;
+    color: black;
+}
+ul li:first-child{
+    background-color: aquamarine;
+}
+ul li:last-child{
+    background-color: blueviolet;
+}
+li:nth-child(even){
+    background-color: blue;
+    color: whitesmoke;
+}*/
+div:first-child{
+    background-image: linear-gradient(to right, red,green);
+    box-shadow: 1vw .5vw .5vw rgba(red, green, blue, alpha);
+}
+h2 {
+    color:var(--primaryColor);
+    text-shadow: 2vw .2vw .1vw rgba(11, 22, 11, 22);}
+section {
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-image:green url(https://i.postimg.cc/ZnD8vvc1/images.jpg) no-repeat;
+    background-blend-mode: lighten;
+}
+:root {
+    --primaryColor: rgba(0, 0, 0);
+    --secondaryColor: white;
+    --alternative: rgba(23, 44,87, .7)
+}
 
 
